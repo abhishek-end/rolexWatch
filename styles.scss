@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  .header-content {
+    background: linear-gradient(to left, #176944, #125838, #0c4129);
+    width: 100%;
+    display: flex;
+    padding: 35px 120px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-family: sans-serif;
+
+    .menu-section {
+      display: flex;
+      gap: 30px;
+    }
+    .logo {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 140px;
+
+      > img {
+        height: 40px;
+        width: 60px;
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      span {
+        height: 2px;
+        background-color: #fff;
+        width: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 120%;
+        top: 20%;
+        transition: all 0.3s ease;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 24px;
+        display: inline-block;
+        background-color: red;
+        left: 120%;
+        bottom: 20%;
+        transition: all 0.3s ease;
+      }
+      &.active {
+        background-color: blue;
+
+        &::before {
+          background-color: green;
+        }
+      }
+    }
+  }
+  .page1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: white;
+
+    .video {
+      height: 80vh;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+    .center-content {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h3 {
+        text-transform: uppercase;
+        font: 400 20px "cursive";
+        text-align: center;
+      }
+      h1 {
+        text-transform: capitalize;
+        font: 400 100px "sans-serif";
+      }
+    }
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+
+      img {
+        width: 100vw;
+        height: 85%;
+        object-fit: cover;
+      }
+    }
+  }
+}
