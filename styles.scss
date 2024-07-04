@@ -70,34 +70,46 @@
   }
   .page1 {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     overflow: hidden;
     position: relative;
     color: white;
-
-    .video {
-      height: 80vh;
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-    }
-    .center-content {
-      position: absolute;
-      top: 35%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      h3 {
-        text-transform: uppercase;
-        font: 400 20px "cursive";
-        text-align: center;
-      }
-      h1 {
-        text-transform: capitalize;
-        font: 400 100px "sans-serif";
-      }
-    }
   }
+
+  .section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .video {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .center-content h3 {
+    text-transform: uppercase;
+    font: 400 20px "cursive";
+  }
+
+  .center-content h1 {
+    text-transform: capitalize;
+    font: 400 100px "sans-serif";
+  }
+
   .swiper-container {
     width: 100%;
     height: 100vh;

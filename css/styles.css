@@ -68,29 +68,37 @@
 }
 .container .page1 {
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   overflow: hidden;
   position: relative;
   color: white;
 }
-.container .page1 .video {
+.container .section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.container .video {
   height: 80vh;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
-.container .page1 .center-content {
+.container .center-content {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.container .page1 .center-content h3 {
-  text-transform: uppercase;
-  font: 400 20px "cursive";
   text-align: center;
 }
-.container .page1 .center-content h1 {
+.container .center-content h3 {
+  text-transform: uppercase;
+  font: 400 20px "cursive";
+}
+.container .center-content h1 {
   text-transform: capitalize;
   font: 400 100px "sans-serif";
 }
