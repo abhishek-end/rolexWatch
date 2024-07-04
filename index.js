@@ -24,7 +24,6 @@ gsap.utils.toArray(".section").forEach(function (page) {
   tl.from(video, {
     yPercent: -100,
     ease: "all",
-    
   }).to(video, {
     yPercent: 50,
     ease: "all",
