@@ -1,7 +1,7 @@
 //js for swipper slider auto in 3 sec
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 10,
   loop: true,
   autoplay: {
     delay: 3000,
