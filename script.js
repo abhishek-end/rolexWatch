@@ -14,15 +14,15 @@ hamburger.addEventListener("click" || "mouseenter", () => {
       ease: "power3.inOut",
     });
     gsap.to(spans[0], {
-      y: 6,
-      rotation: 60,
+      y: 3.5,
+      rotation: 50,
       backgroundColor: "#fff",
       duration: "0.6",
       ease: "power3.inOut",
     });
     gsap.to(spans[1], {
-      y: -6,
-      rotation: -60,
+      y: -3.5,
+      rotation: -50,
       backgroundColor: "#fff",
       duration: "0.3",
       ease: "power3.inOut",
@@ -82,5 +82,14 @@ gsap.utils.toArray(".section").forEach(function (page) {
   }).to(video, {
     yPercent: 50,
     ease: "all",
+  });
+});
+
+const center = document.querySelectorAll(".center-content");
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {
+  center.forEach((e) => {
+    e.classList.toggle("active");
   });
 });

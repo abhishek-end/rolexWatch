@@ -30,7 +30,16 @@ nav .navigation {
 nav .navigation h1 {
   font-size: 20px;
   color: #fff;
+  transition: all ease 0.4s;
   z-index: 99;
+}
+.content h4 {
+  color: #fff;
+  font: 550 20px "Garamond";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 nav .navigation .hamburger {
   width: 50px;
@@ -112,7 +121,15 @@ nav .navigation .logo {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.center-content.active {
+  background-color: black;
+  height: 25%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .page2 .center-content h3,
 .page3 .center-content h3,
 .page4 .center-content h3,
@@ -140,7 +157,7 @@ nav .navigation .logo {
 .page6 {
   height: 5vh;
   width: 100%;
-  padding: 2vw 8vw;
+  padding: 3vw 8vw;
 }
 .page6 .socalmedia {
   width: 100%;
@@ -149,10 +166,29 @@ nav .navigation .logo {
   gap: 20px;
 }
 .page6 .socalmedia h4 {
-  color: black;
+  color: rgb(57, 52, 52);
 }
 .page6 .socalmedia .socialLink {
   display: flex;
   gap: 20px;
   color: #0c4129;
+}
+.page7 {
+  height: 100vh;
+  width: 100%;
+  background: #eeeded;
+}
+.page8 {
+  width: 100%;
+  height: 50vh;
+}
+.page8 .image {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.page8 .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
