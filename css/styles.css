@@ -71,12 +71,26 @@ nav .navigation .logo {
   width: 70px;
 }
 .border {
-  /* height: 80vh; */
+  /*height: 80vh;
+  */
   width: 100%;
   background: linear-gradient(to left, #176944, #125838, #0c4129);
   position: absolute;
   top: 0;
   z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* transition: all ease 0.4s; */
+}
+.border p {
+  font: 400 120px "Garamond";
+  color: #fff;
+}
+.border h1 {
+  font: 600 40px cursive;
+  color: #fff;
 }
 .page1 {
   height: 100%;
@@ -129,6 +143,9 @@ nav .navigation .logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all ease-in 0.6s;
+  color: #fff;
+  border-radius: 5px;
 }
 .page2 .center-content h3,
 .page3 .center-content h3,
@@ -155,7 +172,8 @@ nav .navigation .logo {
   width: 100%;
 }
 .page6 {
-  height: 5vh;
+  /* height: vh; */
+  /* height: 100%; */
   width: 100%;
   padding: 3vw 8vw;
 }
@@ -163,6 +181,8 @@ nav .navigation .logo {
   width: 100%;
   font-size: 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 .page6 .socalmedia h4 {
@@ -176,7 +196,13 @@ nav .navigation .logo {
 .page7 {
   height: 100vh;
   width: 100%;
-  background: #eeeded;
+  background: #f6f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page7 h1 {
+  font: 400 150px "Garamond";
 }
 .page8 {
   width: 100%;
@@ -185,10 +211,18 @@ nav .navigation .logo {
 .page8 .image {
   width: 100%;
   height: 50vh;
+  height: 100%;
   overflow: hidden;
 }
 .page8 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.btn {
+  border: 1px solid #111;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border-radius: 10px;
 }

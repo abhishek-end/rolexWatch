@@ -3,7 +3,7 @@ const menu = document.querySelector(".border");
 const menuText = document.querySelector(".navigation h1");
 let menuOpen = false;
 
-hamburger.addEventListener("click" || "mouseenter", () => {
+hamburger.addEventListener("click", () => {
   const spans = hamburger.querySelectorAll("span");
   const tl = gsap.timeline();
   if (!menuOpen) {
@@ -27,6 +27,7 @@ hamburger.addEventListener("click" || "mouseenter", () => {
       duration: "0.3",
       ease: "power3.inOut",
     });
+
     hamburger.classList.add("active");
     menuText.textContent = "Close";
     menuOpen = true;
@@ -66,7 +67,7 @@ let swiper = new Swiper(".swiper-container", {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".section").forEach(function (page) {
+gsap.utils.toArray(".section ").forEach(function (page) {
   let video = page.querySelectorAll("video");
 
   let tl = gsap.timeline({
@@ -85,11 +86,18 @@ gsap.utils.toArray(".section").forEach(function (page) {
   });
 });
 
+// change contrast with button click
+
 const center = document.querySelectorAll(".center-content");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", () => {
   center.forEach((e) => {
     e.classList.toggle("active");
+    // e.style.transition = "all ease 0.4s";
   });
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Parallax effect for .page8
